@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moda Portfolyo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-bottom: 40px;
+      padding: 12px 24px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background-color: #333;
+      transform: translateX(-5px);
+    }
+    
+    .description {
+      margin-bottom: 40px;
+      max-width: 800px;
+    }
+    
+    .description h1 {
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+    
+    .description p {
+      font-size: 16px;
+      font-weight: 300;
+      color: #666;
+      letter-spacing: 0.5px;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      height: 0;
+      padding-bottom: 125%; /* 4:5 aspect ratio */
+      background-color: #eee;
+      cursor: pointer;
+    }
+    
+    .gallery-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+    
+    /* Full screen modal */
+    .fullscreen-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .fullscreen-image {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+    
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      background-color: #000;
+      border: 2px solid white;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .close-button:hover {
+      background-color: #333;
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      
+      .description h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-button">← Back</a>
+    
+    <div class="description">
+      <h1>sporbilet.com</h1>
+      <p>I designed an interactive website for a company that organizes sports events, allowing users to browse events and register for the ones they’re interested in directly on the same page. My goal was to enable users to sign up for sports events with a single click, without navigating through multiple pages via links.</p>
+    </div>
+    
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="bilet1.jpg" alt="Moda fotoğrafı 1">
+      </div>
+      <div class="gallery-item">
+        <img src="bilet2.jpg" alt="Moda fotoğrafı 2">
+      </div>
+      <div class="gallery-item">
+        <img src="bilet3.jpg" alt="Moda fotoğrafı 3">
+      </div>
+      <div class="gallery-item">
+        <img src="bilet4.jpg" alt="portfolio">
+      </div>
+      <div class="gallery-item">
+        <img src="bilet5.jpg" alt="portfolio">
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
+  <!-- Full screen modal -->
+  <div class="fullscreen-modal" id="imageModal">
+    <img src="" alt="Full screen image" class="fullscreen-image" id="modalImage">
+    <button class="close-button" id="closeButton">Close</button>
+  </div>
+
+  <script>
+    // Get all gallery items
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeButton = document.getElementById('closeButton');
+    
+    // Add click event to each gallery item
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const imgSrc = item.querySelector('img').src;
+        const imgAlt = item.querySelector('img').alt;
+        
+        // Set the modal image source and alt
+        modalImage.src = imgSrc;
+        modalImage.alt = imgAlt;
+        
+        // Display the modal
+        modal.style.display = 'flex';
+        
+        // Prevent scrolling on the body
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    // Close modal when clicking the close button
+    closeButton.addEventListener('click', () => {
+      closeModal();
+    });
+    
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+    
+    // Close modal when pressing Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.style.display === 'flex') {
+        closeModal();
+      }
+    });
+    
+    // Function to close the modal
+    function closeModal() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+</body>
+</html>
