@@ -1,0 +1,26 @@
+<div class="description">
+    <h1>Graphic Design Portfolio</h1>
+    <p>I started my career as a graphic designer and have remained passionate about it ever since. I frequently use Photoshop and Illustrator to create visually compelling designs. One of my strongest skills is motion design, as I have extensive experience working with After Effects.</p>
+  </div>
+  
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="g1.jpg" alt="Moda fotoğrafı 1">
+    </div>
+    <div class="gallery-item">
+      <img src="g2.jpg" alt="Moda fotoğrafı 2">
+    </div>
+    <div class="gallery-item">
+      <img src="g3.jpg" alt="Moda fotoğrafı 3">
+    </div>
+    <div class="gallery-item">
+      <img src="g4.jpg" alt="portfolio">
+    </div>
+    <div class="gallery-item">
+      <img src="g5.jpg" alt="portfolio">
+    </div>
+    <div class="gallery-item">
+      <img src="g6.jpg" alt="portfolio">
+    
+    </div>
+  </div>
