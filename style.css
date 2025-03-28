@@ -311,3 +311,31 @@ footer {
     text-decoration: none;
     display: inline-block;
 }
+
+/* style.css */
+.lottie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#lottie-container {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 260px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+    .lottie-container {
+        max-width: 100%;
+    }
+    
+    #lottie-container {
+        max-width: 100%;
+    }
+}
