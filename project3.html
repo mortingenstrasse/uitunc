@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Moda Portfolyo</title>
+  <title>Motion Design Portfolyo</title>
   <style>
     * {
       margin: 0;
@@ -163,8 +163,8 @@
   <div class="container">
     <a href="index.html" class="back-button">← Back</a>
     <div class="description">
-      <h1>Graphic Design Portfolio</h1>
-      <p>I started my career as a graphic designer and have remained passionate about it ever since. I frequently use Photoshop and Illustrator to create visually compelling designs. One of my strongest skills is motion design, as I have extensive experience working with After Effects.</p>
+      <h1>My Motion Design Portfolio</h1>
+      <!-- <p>I started my career as a graphic designer and have remained passionate about it ever since. I frequently use Photoshop and Illustrator to create visually compelling designs. One of my strongest skills is motion design, as I have extensive experience working with After Effects.</p>
     </div>
     
     <div class="gallery">
@@ -203,7 +203,67 @@
         <img src="g10.jpg" alt="portfolio">
       
       </div>
+-->
+<div class="container">
+  <h1>Under Construction!</h1>
+  <div id="tetris"></div>
+</div>
 
+<style>
+
+
+  h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+  }
+
+  #tetris {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      border: 2px solid #1e2935;
+      overflow: hidden;
+      background-color: #222;
+      margin: 0 auto;
+  }
+
+  /* Tetris Shape Styles */
+  .shape {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #FEE715;
+      animation: fall 4s infinite linear;
+  }
+
+  /* Animation */
+  @keyframes fall {
+      0% { top: -40px; }
+      100% { top: 100%; }
+  }
+</style>
+
+<script>
+  const tetrisContainer = document.getElementById('tetris');
+  const colors = ['#FF6663', '#FEB144', '#FEE715', '#9EE09E', '#9EC1CF', '#CC99C9'];
+
+  function createShape() {
+      const shape = document.createElement('div');
+      shape.classList.add('shape');
+      
+      const randomLeft = Math.floor(Math.random() * (tetrisContainer.offsetWidth - 30));
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+      shape.style.left = randomLeft + 'px';
+      shape.style.backgroundColor = randomColor;
+      
+      tetrisContainer.appendChild(shape);
+
+      setTimeout(() => shape.remove(), 4000); // Şekli düşüş tamamlandıktan sonra kaldır
+  }
+
+  setInterval(createShape, 500);
+</script>
  </div>
     
   </div>
