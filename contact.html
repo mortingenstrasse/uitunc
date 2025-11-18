@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Tunç Alıcıoğlu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-lang="de">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Tunç<span>Alıcıoğlu</span></div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="tr">TR</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <h1 class="page-title" data-i18n="contact.title">Kontakt</h1>
+        
+        <div class="contact-grid">
+            <section class="contact-info">
+                <h2 data-i18n="contact.info">Kontaktinformationen</h2>
+                <div class="contact-details" id="contactDetails"></div>
+                <div class="social-links">
+                    <a href="mailto:tuncalicioglu@gmail.com">Email</a>
+                    <a href="https://trotzdestodes.itch.io/" target="_blank">itch.io</a>
+                    <a href="https://www.youtube.com/@TuncAlicioglu" target="_blank">YouTube</a>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <h2 data-i18n="contact.form">Nachricht senden</h2>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Ihre Nachricht" rows="5" required></textarea>
+                    <button type="submit" class="btn" data-i18n="contact.send">Senden</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tunç Alıcıoğlu</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

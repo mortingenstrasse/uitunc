@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunç Alıcıoğlu - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Lade-Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-text" data-i18n="loader">Laden</div>
+    </div>
+
+    <!-- Partikel-Hintergrund -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Magnet-Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html" class="back-button">← Back</a>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="tr">TR</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-detail-header">
+            <h1 class="section-title" data-i18n="portfolio1.title">UI / UX Redesign – Deuces Cracked</h1>
+            <p class="portfolio-detail-text" data-i18n="portfolio1.description">
+                For the modern redesign of this U.S. poker education platform, I worked in Figma to enhance the video detail page, making its extensive training archive more accessible. And redesigned the homepage, which now functions as a blog, using modern widgets to improve usability and efficiency.
+            </p>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <img src="images/portfolio5/p1.jpg" alt="Portfolio Image 1" class="gallery-item">
+                <img src="images/portfolio5/p2.jpg" alt="Portfolio Image 2" class="gallery-item">
+                <img src="images/portfolio5/p3.jpg" alt="Portfolio Image 3" class="gallery-item">
+                <img src="images/portfolio5/p4.jpg" alt="Portfolio Image 4" class="gallery-item">
+                <img src="images/portfolio5/p5.jpg" alt="Portfolio Image 5" class="gallery-item">
+                <img src="images/portfolio5/p6.jpg" alt="Portfolio Image 6" class="gallery-item">
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev-btn">&#10094;</a>
+        <a class="next-btn">&#10095;</a>
+    </div>
+
+     <!-- KONTAKT-Schnippsel -->
+        <section class="contact-preview">
+            <h2 data-i18n="contact.snippetTitle">Lass uns arbeiten!</h2>
+            <p data-i18n="contact.snippetText">Ich bin für neue Projekte verfügbar.</p>
+            <p>Say Hello, tuncalicioglu@gmail.com</p>
+        </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Tunç Alıcıoğlu</p>
+        <div class="social-links">
+            <a href="https://trotzdestodes.itch.io/" target="_blank" data-i18n="social.itch">itch.io</a>
+            <a href="https://www.youtube.com/@TuncAlicioglu" target="_blank" data-i18n="social.youtube">YouTube</a>
+            
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            de: {
+                loader: "Laden",
+                portfolio1: {
+                    title: "Fullstack Development  gumuslukteknik.com",
+                    description: "Ich habe das komplette Full-Stack-Development für eine Elektrofirma in Bodrum übernommen – UI/UX, Coding, SEO und Backend."
+                },
+                contact: {
+                    snippetTitle: "Lass uns arbeiten!",
+                    snippetText: "Ich bin für neue Projekte verfügbar."
+                }
+            },
+            en: {
+                loader: "Loading",
+                portfolio1: {
+                    title: "Fullstack Development  gumuslukteknik.com",
+                    description: "I handled all full-stack development for an electrical company in Bodrum, including UI/UX, coding, SEO, and backend interactions."
+                },
+                contact: {
+                    snippetTitle: "Let's work together!",
+                    snippetText: "I'm available for new projects."
+                }
+            },
+            tr: {
+                loader: "Yükleniyor",
+                portfolio1: {
+                    title: "Fullstack Development  gumuslukteknik.com",
+                    description: "Bodrum merkezli elektrik şirketinin UI/UX, kodlama, SEO ve backend gibi tüm full-stack geliştirmelerini üstlendim."
+                },
+                contact: {
+                    snippetTitle: "Hadi çalışalım!",
+                    snippetText: "Yeni projeler için müsaitim."
+                }
+            }
+        };
+
+        let currentLang = 'tr'; // Default language
+
+        const getLangFromUrl = () => {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang');
+            if (lang && (lang === 'de' || lang === 'en' || lang === 'tr')) {
+                return lang;
+            }
+            return 'tr'; // Default language if not specified or invalid
+        };
+
+        const applyTranslations = () => {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (key.startsWith('portfolio1.')) {
+                    const subKey = key.split('.')[1];
+                    if (translations[currentLang].portfolio1 && translations[currentLang].portfolio1[subKey]) {
+                        el.innerHTML = translations[currentLang].portfolio1[subKey];
+                    }
+                } else if (key.startsWith('contact.')) {
+                    const subKey = key.split('.')[1];
+                    if (translations[currentLang].contact && translations[currentLang].contact[subKey]) {
+                        el.innerHTML = translations[currentLang].contact[subKey];
+                    }
+                } else if (key === 'loader') {
+                    if (translations[currentLang].loader) {
+                        el.innerHTML = translations[currentLang].loader;
+                    }
+                }
+            });
+        };
+
+        const switchLanguage = (lang) => {
+            currentLang = lang;
+            document.body.setAttribute('data-lang', lang);
+            document.documentElement.setAttribute('lang', lang);
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+            applyTranslations();
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            currentLang = getLangFromUrl();
+            document.body.setAttribute('data-lang', currentLang);
+            document.documentElement.setAttribute('lang', currentLang);
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === currentLang));
+            applyTranslations();
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => switchLanguage(btn.dataset.lang));
+            });
+
+            // Lightbox functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.querySelector('.close-btn');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            let currentImageIndex = 0;
+            let images = [];
+
+            if (lightbox && galleryItems.length > 0) {
+                images = Array.from(galleryItems).map(item => item.src);
+
+                galleryItems.forEach((item, index) => {
+                    item.addEventListener('click', () => {
+                        currentImageIndex = index;
+                        openLightbox(currentImageIndex);
+                    });
+                });
+
+                closeBtn.addEventListener('click', closeLightbox);
+                prevBtn.addEventListener('click', showPrevImage);
+                nextBtn.addEventListener('click', showNextImage);
+
+                function openLightbox(index) {
+                    lightbox.style.display = 'block';
+                    lightboxImg.src = images[index];
+                }
+
+                function closeLightbox() {
+                    lightbox.style.display = 'none';
+                }
+
+                function showNextImage() {
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    lightboxImg.src = images[currentImageIndex];
+                }
+
+                function showPrevImage() {
+                    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                    lightboxImg.src = images[currentImageIndex];
+                }
+            }
+
+            // Hide loader
+            const loader = document.getElementById('loader');
+            if (loader) {
+                setTimeout(() => {
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.remove(), 500);
+                }, 1000);
+            }
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

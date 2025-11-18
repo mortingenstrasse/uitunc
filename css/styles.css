@@ -1,0 +1,844 @@
+:root {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-card: #252525;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --accent: #FF4F18;
+    --accent-hover: #e64514;
+    --border: #333333;
+    --glow: rgba(255, 79, 24, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+}
+
+/* LOADER */
+.loader {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    background: var(--bg-primary);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s;
+}
+
+.loader-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* PARTICLE BACKGROUND */
+.particles {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 2px; height: 2px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+
+/* CUSTOM CURSOR */
+.cursor {
+    width: 20px; height: 20px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.1s;
+}
+
+.cursor-follower {
+    width: 40px; height: 40px;
+    background: radial-gradient(circle, var(--glow) 0%, transparent 70%);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9997;
+    transition: transform 0.3s;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0; width: 100%;
+    padding: 2rem 4rem;
+    background: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.nav {
+    display: flex; justify-content: space-between; align-items: center;
+    max-width: 1200px; margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-height: 40px; /* Adjust as needed to scale the logo */
+    width: auto;
+}
+
+.lang-btn {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text-secondary); padding: 0.5rem 1rem;
+    cursor: pointer; border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.lang-btn.active, .lang-btn:hover {
+    background: var(--accent); color: var(--bg-primary);
+    border-color: var(--accent);
+    box-shadow: 0 0 15px var(--glow);
+}
+
+/* HERO PARALLAX */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+}
+
+.hero-bg-layer {
+    position: absolute; width: 110%; height: 110%;
+    opacity: 0.1;
+}
+
+.layer-1 {
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+    top: -5%; left: -5%;
+    animation: drift 20s infinite alternate;
+}
+
+.layer-2 {
+    background: linear-gradient(45deg, var(--accent), transparent);
+    bottom: -5%; right: -5%;
+    animation: drift 25s infinite alternate-reverse;
+}
+
+.layer-3 {
+    background: conic-gradient(from 0deg, var(--accent), transparent, var(--accent));
+    top: 0; left: 0;
+    animation: rotate 30s infinite linear;
+}
+
+@keyframes drift {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(30px, -30px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hero-content {
+    text-align: center; z-index: 1;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title {
+    font-size: 4rem; font-weight: 900;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem; color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.hero-badges {
+    display: flex; gap: 1rem; justify-content: center;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: var(--bg-card); border: 1px solid var(--accent);
+    padding: 0.5rem 1rem; border-radius: 20px;
+    font-size: 0.9rem; color: var(--accent);
+    transition: all 0.3s;
+}
+
+.badge:hover {
+    background: var(--accent); color: var(--bg-primary);
+    transform: translateY(-3px); box-shadow: 0 5px 15px var(--glow);
+}
+
+.scroll-indicator {
+    position: absolute; bottom: 2rem;
+    width: 30px; height: 50px;
+    border: 2px solid var(--accent); border-radius: 15px;
+    opacity: 0.5;
+}
+
+.scroll-indicator::after {
+    content: ''; position: absolute; top: 8px; left: 50%;
+    width: 4px; height: 10px; background: var(--accent);
+    border-radius: 2px; transform: translateX(-50%);
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(10px); }
+}
+
+/* SECTIONS */
+section {
+    padding: 6rem 4rem; max-width: 1200px; margin: 0 auto;
+}
+
+.section-title {
+    font-size: 3rem; text-align: center; margin-bottom: 4rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: ''; display: block; width: 100px; height: 3px;
+    background: var(--accent); margin: 1rem auto 0;
+    box-shadow: 0 0 10px var(--glow);
+}
+
+/* PORTFOLIO GRID */
+.portfolio-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-card {
+    background: var(--bg-card); border-radius: 16px;
+    overflow: hidden; border: 1px solid var(--border);
+    transition: all 0.4s; cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 20px 40px rgba(255, 79, 24, 0.2);
+    border-color: var(--accent);
+}
+
+.card-image {
+    width: 100%; height: 220px; background: var(--bg-secondary);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 4rem; position: relative;
+    overflow: hidden;
+}
+
+.card-image::before {
+    content: ''; position: absolute; top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: linear-gradient(45deg, transparent, var(--accent), transparent);
+    transform: rotate(45deg);
+    transition: all 0.5s; opacity: 0;
+}
+
+.portfolio-card:hover .card-image::before {
+    animation: shine 0.5s ease-in-out; opacity: 1;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.card-content { padding: 2rem; }
+.card-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+.card-description { color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6; }
+
+/* MUSIC SKILLS CARD */
+.music-skills-section {
+    padding: 6rem 4rem; max-width: 1200px; margin: 0 auto;
+}
+
+.music-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.4s;
+    display: flex; /* Make it a horizontal layout */
+    align-items: center;
+    width: 100%; /* Full width */
+    min-height: 200px; /* Adjust height as needed */
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 79, 24, 0.15);
+    border-color: var(--accent);
+}
+
+.music-image-container {
+    width: 250px; /* Fixed width for the image */
+    height: 100%; /* Take full height of the card */
+    overflow: hidden;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.music-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container */
+    display: block;
+}
+
+.music-content {
+    padding: 2rem;
+    flex-grow: 1; /* Allow content to take remaining space */
+}
+
+.music-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.music-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.music-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    background: var(--accent); color: var(--bg-primary);
+    padding: 0.75rem 1.5rem; border: none; border-radius: 6px;
+    cursor: pointer; font-weight: 600; text-decoration: none;
+    display: inline-block; transition: all 0.3s;
+}
+
+.btn:hover {
+    background: var(--accent-hover); transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--glow);
+}
+
+.btn-glow {
+    padding-top: 12px !important;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 5px 15px var(--glow); }
+    to { box-shadow: 0 5px 25px var(--glow); }
+}
+
+/* ABOUT SECTION */
+.about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+    align-items: start;
+}
+
+.about-text {
+    font-size: 1.1rem; line-height: 1.8;
+    color: var(--text-secondary);
+    text-align: left; /* Align text to the left */
+}
+
+.about-profile-image {
+    max-height: 200px;
+    display: block; /* Make it a block element to apply margin auto */
+    margin: 1rem auto; /* Center the image horizontally and add some vertical spacing */
+}
+
+.about-skills {
+    display: flex; flex-direction: column; gap: 1rem;
+}
+
+.skill-bar {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 1rem;
+}
+
+.skill-header {
+    display: flex; justify-content: space-between; margin-bottom: 0.5rem;
+}
+
+.skill-progress {
+    height: 4px; background: var(--bg-secondary); border-radius: 2px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%; background: var(--accent);
+    border-radius: 2px; width: 0;
+    transition: width 1s ease-out;
+    box-shadow: 0 0 10px var(--glow);
+}
+
+/* CAREER TIMELINE */
+.career-timeline {
+    position: relative;
+    padding: 2rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.career-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Adjust for left alignment */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+
+.career-timeline .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 0; /* Removed padding-left to simplify positioning */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s;
+}
+
+.career-timeline .timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.career-timeline .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 11px; /* Position of the dot, centered on vertical line */
+    top: 0.5rem;
+    width: 18px;
+    height: 18px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 2px solid var(--bg-primary);
+    box-shadow: 0 0 10px var(--glow);
+    z-index: 1;
+}
+
+.career-timeline .timeline-date {
+    position: absolute;
+    left: -88px; /* Right edge at 12px from timeline-item left */
+    top: 2rem; /* Aligned with the content of timeline-content */
+    width: 100px;
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.career-timeline .timeline-content {
+    background: var(--bg-card);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    position: relative;
+    margin-left: 28px; /* Left edge at 28px from timeline-item left */
+}
+
+.career-timeline .timeline-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.career-timeline .timeline-content p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.career-timeline .timeline-description-small {
+    font-size: 0.85rem; /* Smaller font size */
+    color: var(--text-secondary); /* Consistent text color */
+    margin-top: 0.5rem; /* Add some spacing above the description */
+}
+
+/* Responsive adjustments for career timeline */
+@media (max-width: 768px) {
+    .career-timeline::before {
+        left: 20px;
+    }
+
+    .career-timeline .timeline-item {
+        padding-left: 60px;
+    }
+
+    .career-timeline .timeline-date {
+        position: static;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        padding-left: 0;
+        color: var(--accent);
+    }
+
+    .career-timeline .timeline-content {
+        margin-left: 0;
+    }
+}
+
+/* CERTIFICATES SECTION */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cert-card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-out;
+}
+
+.cert-card:hover::before {
+    transform: translateX(0);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 79, 24, 0.15);
+    border-color: var(--accent);
+}
+
+.cert-date {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.cert-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.cert-issuer {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+.cert-content {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.cert-button {
+    margin-top: 1rem;
+    display: inline-block;
+    background: var(--accent);
+    color: var(--bg-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+/* CONTACT */
+.contact-preview {
+    text-align: center; background: var(--bg-card);
+    border-radius: 16px; padding: 4rem; margin: 4rem auto;
+    border: 1px solid var(--border);
+}
+
+/* FOOTER */
+.footer {
+    padding: 2rem; text-align: center; background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+}
+
+.social-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; }
+.social-links a {
+    color: var(--accent); text-decoration: none; font-weight: 600;
+    transition: all 0.3s; position: relative;
+}
+
+    .social-links a:hover { transform: translateY(-3px); text-shadow: 0 0 10px var(--glow); }
+
+/* CV Link Button */
+.cv-link-container {
+    text-align: center;
+    margin-top: 3rem; /* More spacing from the career timeline */
+}
+
+.cv-link-container .button {
+    background: var(--accent);
+    color: var(--bg-primary);
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(255, 79, 24, 0.3);
+}
+
+.cv-link-container .button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 79, 24, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header { padding: 1.5rem; }
+    .hero-title { font-size: 2.5rem; }
+    section { padding: 4rem 1.5rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .timeline::before { left: 2rem; }
+    .timeline-content { width: calc(100% - 4rem); margin-left: 4rem !important; }
+
+    .music-card {
+        flex-direction: column; /* Stack elements vertically */
+        min-height: auto; /* Remove fixed min-height */
+    }
+
+    .music-image-container {
+        width: 100%; /* Image takes full width */
+        height: 200px; /* Fixed height for mobile image */
+    }
+
+    .music-content {
+        padding: 1.5rem; /* Adjust padding for mobile */
+    }
+
+    .music-title {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .music-description {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+
+    .music-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 0.5rem;
+    }
+
+    .logo-img {
+        max-height: 20px; /* Adjust for mobile */
+    }
+}
+
+/* Back Button */
+.back-button {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+    text-shadow: 0 0 10px var(--glow);
+}
+
+/* Portfolio Detail Header */
+.portfolio-detail-header {
+    text-align: center;
+    padding: 8rem 4rem 2rem; /* Adjust top padding to account for fixed header */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.portfolio-detail-header .section-title {
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-detail-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 2rem 4rem 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 250px; /* Square format */
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(255, 79, 24, 0.2);
+    border-color: var(--accent);
+}
+
+/* Lightbox Overlay */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    bottom: 15px; /* Position under the image */
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 0 15px; /* Add some padding for better click area */
+}
+
+.prev-btn {
+    left: 50%;
+    transform: translateX(-100%); /* Center it relative to the image */
+}
+
+.next-btn {
+    right: 50%;
+    transform: translateX(100%); /* Center it relative to the image */
+}
+
+.close-btn:hover,
+.prev-btn:hover,
+.next-btn:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-item {
+        height: 200px;
+    }
+    .portfolio-detail-header {
+        padding: 6rem 1.5rem 1rem;
+    }
+    .gallery-section {
+        padding: 1rem 1.5rem 4rem;
+    }
+    .close-btn, .prev-btn, .next-btn {
+        font-size: 30px;
+        top: 10px;
+    }
+    .close-btn {
+        right: 20px;
+    }
+    .prev-btn {
+        left: 20px;
+    }
+    .next-btn {
+        right: 20px;
+    }
+}

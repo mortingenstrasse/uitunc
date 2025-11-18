@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunç Alıcıoğlu - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Lade-Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-text" data-i18n="loader">Laden</div>
+    </div>
+
+    <!-- Partikel-Hintergrund -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Magnet-Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="Tunç Alıcıoğlu Logo" class="logo-img">
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="tr">TR</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO mit Parallax -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-layer layer-1"></div>
+            <div class="hero-bg-layer layer-2"></div>
+            <div class="hero-bg-layer layer-3"></div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title" id="heroTitle"></h1>
+                <p class="hero-subtitle" id="heroSubtitle"></p>
+                <div class="hero-badges">
+                    <span class="badge">UI/UX</span>
+                    <span class="badge">Game Dev</span>
+                    <span class="badge">Music</span>
+                </div>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio-section">
+            <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+            <div class="portfolio-grid" id="portfolioGrid"></div>
+        </section>
+
+        <!-- MUSIC SKILLS CARD -->
+        <section class="music-skills-section">
+            <div id="musicSkillsContainer"></div>
+        </section>
+
+        <!-- ÜBER MICH (neu) -->
+        <section class="about-section">
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text" id="aboutText">
+                </div>
+                <div class="about-skills" id="aboutSkills"></div>
+            </div>
+        </section>
+
+        <!-- CAREER SECTION -->
+        <section class="career-section">
+            <h2 class="section-title" data-i18n="career.title">Career</h2>
+            <div class="career-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 -</div>
+                    <div class="timeline-content">
+                        <h3>Present | Freelance Creative</h3>
+                        <p>UI Design • Game Development • Music Composition</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023-2024</div>
+                    <div class="timeline-content">
+                        <h3>User Interface Design Manager</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021-2023</div>
+                    <div class="timeline-content">
+                        <h3>Design Team Lead</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2017 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Senior UI Designer</h3>
+                        <p>nesine.com</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016 - 2017</div>
+                    <div class="timeline-content">
+                        <h3>Senior Art Director - UX/ UI Designer - Motion Designer</h3>
+                        <p>i.e.d.a - istanbul</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2014 - 2016</div>
+                    <div class="timeline-content">
+                        <h3>Multimedia Designer</h3>
+                        <p>Gelecekhane</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cv-link-container" style="text-align: center; margin-top: 20px;">
+                <a href="TuncAliciogluCV.pdf" target="_blank" class="button">Open CV (PDF)</a>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES SECTION -->
+        <section class="certs-section">
+            <h2 class="section-title" data-i18n="certs.title">Certificates</h2>
+            <div class="certs-grid" id="certsGrid">
+                <!-- Certificates will be rendered here by JS -->
+            </div>
+        </section>
+
+        <!-- KONTAKT-Schnippsel -->
+        <section class="contact-preview">
+            <h2 data-i18n="contact.snippetTitle">Available for new projects.</h2>
+            
+            <p>Contact: tuncalicioglu@gmail.com</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Tunç Alıcıoğlu</p>
+        <div class="social-links">
+            <a href="https://trotzdestodes.itch.io/" target="_blank" data-i18n="social.itch">itch.io</a>
+            <a href="https://www.youtube.com/@TuncAlicioglu" target="_blank" data-i18n="social.youtube">YouTube</a>
+            
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
