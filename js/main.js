@@ -173,7 +173,7 @@ const translations = {
                 { "date": "2025", "name": "German KMK Document", "issuer": "Germany - University entrance qualification", "type": "image", "image": "images/kmkImage.jpg", "description": "KMK-approved university equivalency.", "link": "certificates/kmk.pdf" },
                 { "date": "2025", "name": "German B1 Language", "issuer": "Goethe-Institut", "type": "image", "image": "images/telcImage.jpg", "description": "Telc German B1", "link": "certificates/b1.pdf" },
                 { "date": "2025", "name": "C1 English Language", "issuer": "ismek", "type": "text" },
-                { "date": "2025", "name": "Müzik Teorisi", "issuer": "Berklee Online", "type": "text" },
+                { "date": "2025", "name": "Music Theory", "issuer": "Berklee Online", "type": "text" },
                 { "date": "2018", "name": "iOS Programming Certificate", "issuer": "Wissen Akademie", "type": "text" },
                 { "date": "2015", "name": "Graphic Design", "issuer": "CalArts Coursera", "type": "text" }
                 
@@ -350,7 +350,7 @@ const translations = {
                 { "date": "2025", "name": "German KMK Document", "issuer": "Germany - University entrance qualification", "type": "image", "image": "images/kmkImage.jpg", "description": "KMK-approved university equivalency.", "link": "certificates/kmk.pdf" },
                 { "date": "2025", "name": "German B1 Language", "issuer": "Goethe-Institut", "type": "image", "image": "images/telcImage.jpg", "description": "Telc German B1", "link": "certificates/b1.pdf" },
                 { "date": "2025", "name": "C1 English Language", "issuer": "ismek", "type": "text" },
-                { "date": "2025", "name": "Müzik Teorisi", "issuer": "Berklee Online", "type": "text" },
+                { "date": "2025", "name": "Music Theory", "issuer": "Berklee Online", "type": "text" },
                 { "date": "2018", "name": "iOS Programming Certificate", "issuer": "Wissen Akademie", "type": "text" },
                 { "date": "2015", "name": "Graphic Design", "issuer": "CalArts Coursera", "type": "text" }
                 
@@ -527,7 +527,7 @@ const translations = {
                 { "date": "2025", "name": "German KMK Document", "issuer": "Germany - University entrance qualification", "type": "image", "image": "images/kmkImage.jpg", "description": "KMK-approved university equivalency.", "link": "certificates/kmk.pdf" },
                 { "date": "2025", "name": "German B1 Language", "issuer": "Goethe-Institut", "type": "image", "image": "images/telcImage.jpg", "description": "Telc German B1", "link": "certificates/b1.pdf" },
                 { "date": "2025", "name": "C1 English Language", "issuer": "ismek", "type": "text" },
-                { "date": "2025", "name": "Müzik Teorisi", "issuer": "Berklee Online", "type": "text" },
+                { "date": "2025", "name": "Music Theory", "issuer": "Berklee Online", "type": "text" },
                 { "date": "2018", "name": "iOS Programming Certificate", "issuer": "Wissen Akademie", "type": "text" },
                 { "date": "2015", "name": "Graphic Design", "issuer": "CalArts Coursera", "type": "text" }
                 
