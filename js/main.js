@@ -50,7 +50,7 @@ const translations = {
                     link: "portfolio5.html",
                     image: "images/portfolio-image5.jpg",
                     title: "gumuslukteknik.com UI&UX Fullstack Development",
-                    description: "Ich habe UI- und UX-Studien durchgeführt und Schnittstellen für das Unternehmen entworfen, das Laufveranstaltungen anbietet.",
+                    description: "Ich habe das komplette Full-Stack-Development für eine Elektrofirma in Bodrum übernommen – UI/UX, Coding, SEO und Backend.",
                     button: "Details ansehen"
                 },
                 {
@@ -58,7 +58,7 @@ const translations = {
                     link: "portfolio6.html",
                     image: "images/portfolio-image6.jpg",
                     title: "composerunion.com UI&UX / Fullstack Development",
-                    description: "Ich habe UI- und UX-Studien durchgeführt und Schnittstellen für das Unternehmen entworfen, das Laufveranstaltungen anbietet.",
+                    description: "Ich habe eine Blogseite über Musikkomposition erstellt. Das Design wurde in Figma erstellt, das Backend mit Supabase gebaut. Ich arbeite weiter am Admin-Panel und an einer SEO-freundlichen Struktur.",
                     button: "Details ansehen"
                 },
                 {
@@ -75,7 +75,7 @@ const translations = {
                     image: "images/portfolio-image8.jpg",
                     title: "Indie Game Development",
                     description: "2024 habe ich meinen Vollzeitjob verlassen, um an meinen eigenen Spielen zu arbeiten. Bisher habe ich zwei Spiele veröffentlicht.",
-                    button: "Detayları Gör"
+                    button: "Details ansehen"
                 },
                 {
                     id: "lottie-animation-ui-motion",
@@ -173,7 +173,7 @@ const translations = {
                 { "date": "2025", "name": "German KMK Document", "issuer": "Germany - University entrance qualification", "type": "image", "image": "images/kmkImage.jpg", "description": "KMK-approved university equivalency.", "link": "certificates/kmk.pdf" },
                 { "date": "2025", "name": "German B1 Language", "issuer": "Goethe-Institut", "type": "image", "image": "images/telcImage.jpg", "description": "Telc German B1", "link": "certificates/b1.pdf" },
                 { "date": "2025", "name": "C1 English Language", "issuer": "ismek", "type": "text" },
-                { "date": "2025", "name": "Music Theory", "issuer": "Berklee Online", "type": "text" },
+                { "date": "2025", "name": "Müzik Teorisi", "issuer": "Berklee Online", "type": "text" },
                 { "date": "2018", "name": "iOS Programming Certificate", "issuer": "Wissen Akademie", "type": "text" },
                 { "date": "2015", "name": "Graphic Design", "issuer": "CalArts Coursera", "type": "text" }
                 
@@ -228,7 +228,7 @@ const translations = {
                     link: "portfolio5.html",
                     image: "images/portfolio-image5.jpg",
                     title: "gumuslukteknik.com UI&UX Fullstack Development",
-                    description: "I carried out UI and UX studies and designed interfaces for the company offering running events.",
+                    description: "I handled all full-stack development for an electrical company in Bodrum, including UI/UX, coding, SEO, and backend interactions.",
                     button: "View Details"
                 },
                 {
@@ -236,7 +236,7 @@ const translations = {
                     link: "portfolio6.html",
                     image: "images/portfolio-image6.jpg",
                     title: "composerunion.com UI&UX / Fullstack Development",
-                    description: "I carried out UI and UX studies and designed interfaces for the company offering running events.",
+                    description: "I developed a blog platform dedicated to music composition. The design was created in Figma, and the backend built with Supabase. I continue to work on the admin panel and SEO-optimized content system.",
                     button: "View Details"
                 },
                 {
@@ -244,7 +244,7 @@ const translations = {
                     link: "portfolio7.html",
                     image: "images/portfolio-image7.jpg",
                     title: "Grafikdesign & 2D Motion",
-                    description: "I begann meine Karriere als Grafik- und Motiondesigner und habe dieses Feld nie verlassen. I have worked in this area in every company I have worked for.",
+                    description: " I started my career as a graphic designer and continued working in this field throughout every role.",
                     button: "View Details"
                 },
                 {
@@ -253,7 +253,7 @@ const translations = {
                     image: "images/portfolio-image8.jpg",
                     title: "Indie Game Development",
                     description: " In 2024, I left my full-time job to focus on my own game projects, and I have released two games so far.",
-                    button: "Detayları Gör"
+                    button: "View Details"
                 },
                 {
                     id: "lottie-animation-ui-motion",
@@ -350,7 +350,7 @@ const translations = {
                 { "date": "2025", "name": "German KMK Document", "issuer": "Germany - University entrance qualification", "type": "image", "image": "images/kmkImage.jpg", "description": "KMK-approved university equivalency.", "link": "certificates/kmk.pdf" },
                 { "date": "2025", "name": "German B1 Language", "issuer": "Goethe-Institut", "type": "image", "image": "images/telcImage.jpg", "description": "Telc German B1", "link": "certificates/b1.pdf" },
                 { "date": "2025", "name": "C1 English Language", "issuer": "ismek", "type": "text" },
-                { "date": "2025", "name": "Music Theory", "issuer": "Berklee Online", "type": "text" },
+                { "date": "2025", "name": "Müzik Teorisi", "issuer": "Berklee Online", "type": "text" },
                 { "date": "2018", "name": "iOS Programming Certificate", "issuer": "Wissen Akademie", "type": "text" },
                 { "date": "2015", "name": "Graphic Design", "issuer": "CalArts Coursera", "type": "text" }
                 
@@ -527,7 +527,7 @@ const translations = {
                 { "date": "2025", "name": "German KMK Document", "issuer": "Germany - University entrance qualification", "type": "image", "image": "images/kmkImage.jpg", "description": "KMK-approved university equivalency.", "link": "certificates/kmk.pdf" },
                 { "date": "2025", "name": "German B1 Language", "issuer": "Goethe-Institut", "type": "image", "image": "images/telcImage.jpg", "description": "Telc German B1", "link": "certificates/b1.pdf" },
                 { "date": "2025", "name": "C1 English Language", "issuer": "ismek", "type": "text" },
-                { "date": "2025", "name": "Music Theory", "issuer": "Berklee Online", "type": "text" },
+                { "date": "2025", "name": "Müzik Teorisi", "issuer": "Berklee Online", "type": "text" },
                 { "date": "2018", "name": "iOS Programming Certificate", "issuer": "Wissen Akademie", "type": "text" },
                 { "date": "2015", "name": "Graphic Design", "issuer": "CalArts Coursera", "type": "text" }
                 
