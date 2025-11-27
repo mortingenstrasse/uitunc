@@ -74,7 +74,7 @@ const translations = {
                     link: "https://trotzdestodes.itch.io/",
                     image: "images/portfolio-image8.jpg",
                     title: "Indie Game Development",
-                    description: "2024 habe ich meinen Vollzeitjob verlassen, um an meinen eigenen Spielen zu arbeiten. Bisher habe ich zwei Spiele veröffentlicht.",
+                    description: "Im Jahr 2024 habe ich meine Unternehmenskarriere beendet und bin selbstständiger Spieleentwickler geworden. Bis jetzt habe ich drei Spiele veröffentlicht: Der Philologe, The Struggle for Bread und Chessforge.",
                     button: "Details ansehen"
                 },
                 {
@@ -252,7 +252,7 @@ const translations = {
                     link: "https://trotzdestodes.itch.io/",
                     image: "images/portfolio-image8.jpg",
                     title: "Indie Game Development",
-                    description: " In 2024, I left my full-time job to focus on my own game projects, and I have released two games so far.",
+                    description: "In 2024, I ended my corporate career and became an independent game developer. So far, I have released three games: Der Philologe, The Struggle for Bread, and Chessforge.",
                     button: "View Details"
                 },
                 {
@@ -429,7 +429,7 @@ const translations = {
                     link: "https://trotzdestodes.itch.io/",
                     image: "images/portfolio-image8.jpg",
                     title: "Indie Game Development",
-                    description: "2024 yılında şirket kariyerimi sonlandırarak, serbest oyun geliştiricisi oldum. Şuana kadar 2 adet oyun yayınladım. The Struggle for Bread ve Chessforge.",
+                    description: "2024 yılında şirket kariyerimi sonlandırarak, serbest oyun geliştiricisi oldum. Şuana kadar 3 adet oyun yayınladım. Der Philologe, The Struggle for Bread ve Chessforge.",
                     button: "Detayları Gör"
                 },
                 {
