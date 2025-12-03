@@ -139,29 +139,33 @@ body {
     position: relative;
     height: 100vh;
     display: flex; align-items: center; justify-content: center;
-    overflow: hidden;
+    /* Removed overflow: hidden as background layers will be fixed */
+    width: 100vw; /* Ensure full viewport width */
+    max-width: none; /* Remove any max-width constraints */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any paddings */
 }
 
 .hero-bg-layer {
-    position: absolute; width: 110%; height: 110%;
+    position: fixed; /* Fixed to viewport */
+    top: -50vh; left: -50vw; /* Position to cover the full viewport while being larger */
+    width: 200vw; height: 200vh; /* Cover entire viewport with extra space for animations */
     opacity: 0.1;
+    z-index: -1; /* Behind hero content */
 }
 
 .layer-1 {
     background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
-    top: -5%; left: -5%;
     animation: drift 20s infinite alternate;
 }
 
 .layer-2 {
     background: linear-gradient(45deg, var(--accent), transparent);
-    bottom: -5%; right: -5%;
     animation: drift 25s infinite alternate-reverse;
 }
 
 .layer-3 {
     background: conic-gradient(from 0deg, var(--accent), transparent, var(--accent));
-    top: 0; left: 0;
     animation: rotate 30s infinite linear;
 }
 
