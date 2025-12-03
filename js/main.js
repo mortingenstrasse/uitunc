@@ -617,7 +617,7 @@ const renderPortfolio = () => {
     const grid = document.getElementById('portfolioGrid');
     if (!grid) return;
     grid.innerHTML = translations[currentLang].portfolio.categories.map(cat => `
-        <div class="portfolio-card" onclick="openDetail('${cat.link}')">
+        <div class="portfolio-card" id="${cat.id}" onclick="openDetail('${cat.link}')">
             <div class="card-image"><img src="${cat.image}" alt="${cat.title}"></div>
             <div class="card-content">
                 <h3 class="card-title">${cat.title}</h3>
