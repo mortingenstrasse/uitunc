@@ -405,7 +405,7 @@ const translations = {
                     link: "portfolio5.html",
                     image: "images/portfolio-image5.jpg",
                     title: "gumuslukteknik.com UI&UX Fullstack Development",
-                    description: "Koşu etkinlikleri sunan firma için UI ve UX çalışmaları yaptım, arayüzlerini tasarladım.",
+                    description: "Bodrum merkezli elektrik hizmetleri firması için Full-Stack development'ın tamamunı üstlendim. UI/UX, Kodlama, SEO ve Backend etkileşimleri dahil.",
                     button: "Detayları Gör"
                 },
                 {
@@ -413,7 +413,7 @@ const translations = {
                     link: "portfolio6.html",
                     image: "images/portfolio-image6.jpg",
                     title: "composerunion.com UI&UX / Fullstack Development",
-                    description: "Koşu etkinlikleri sunan firma için UI ve UX çalışmaları yaptım, arayüzlerini tasarladım.",
+                    description: "Müzik ve müzik eğitimi üzerine bir blog platformu geliştirdim. Tasarımı Figma'da oluşturdum, backend'i Supabase ile inşa ettim. Admin paneli ve SEO dostu içerik sistemi üzerinde çalışmaya devam ediyorum.",
                     button: "Detayları Gör"
                 },
                 {
@@ -429,7 +429,7 @@ const translations = {
                     link: "https://trotzdestodes.itch.io/",
                     image: "images/portfolio-image8.jpg",
                     title: "Indie Game Development",
-                    description: "2024 yılında şirket kariyerimi sonlandırarak, serbest oyun geliştiricisi oldum. Şuana kadar 3 adet oyun yayınladım. Der Philologe, The Struggle for Bread ve Chessforge.",
+                    description: "2024 yılında şirket kariyerimi sonlandırarak, serbest oyun geliştiriciliğini deneyimledim. Şu ana kadar 3 adet oyun yayınladım. Der Philologe, The Struggle for Bread ve Chessforge.",
                     button: "Detayları Gör"
                 },
                 {
