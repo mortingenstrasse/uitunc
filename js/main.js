@@ -38,6 +38,14 @@ const translations = {
                     button: "Details ansehen"
                 },
                 {
+                    id: "akai-mpc-one-redesign",
+                    link: "portfolio10.html",
+                    image: "images/portfolio-image11.jpg",
+                    title: "Akai MPC UI Redesign",
+                    description: "Ich habe ein Akai MPC One und wollte das interface neu gestalten.",
+                    button: "Details ansehen"
+                },
+                {
                     id: "ui-ux-sporbilet",
                     link: "portfolio4.html",
                     image: "images/portfolio-image4.jpg",
@@ -216,6 +224,14 @@ const translations = {
                     button: "View Details"
                 },
                 {
+                    id: "akai-mpc-one-redesign",
+                    link: "portfolio10.html",
+                    image: "images/portfolio-image11.jpg",
+                    title: "Akai MPC UI Redesign",
+                    description: "I own an Akai MPC One and I wanted to redesign its user interface.",
+                    button: "View Details"
+                },
+                {
                     id: "ui-ux-sporbilet",
                     link: "portfolio4.html",
                     image: "images/portfolio-image4.jpg",
@@ -390,6 +406,14 @@ const translations = {
                     image: "images/portfolio-image3.jpg",
                     title: "UI / UX Nesine.com & atyarisi.com",
                     description: "7 sene boyunca Nesine.com ve bünyesinde web designer pozisyonunda çalıştım. Bu süreçte native iOS - And tasarımları, mailing gibi görevler yaptım. Son 2 yıl yönetici pozisyonunda bulundum.",
+                    button: "Detayları Gör"
+                },
+                {
+                    id: "akai-mpc-one-redesign",
+                    link: "portfolio10.html",
+                    image: "images/portfolio-image11.jpg",
+                    title: "Akai MPC UI Redesign",
+                    description: "Akai MPC One'a sahibim ve arayüzüne redesign çalışmak istedim.",
                     button: "Detayları Gör"
                 },
                 {
