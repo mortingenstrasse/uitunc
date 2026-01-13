@@ -42,7 +42,7 @@ const translations = {
                     link: "portfolio10.html",
                     image: "images/portfolio-image11.jpg",
                     title: "Akai MPC UI Redesign",
-                    description: "Ich habe ein Akai MPC One und wollte das interface neu gestalten.",
+                    description: "Ich habe das User Interface der MPC-Musikproduktions-Workstation neu gestaltet.",
                     button: "Details ansehen"
                 },
                 {
@@ -228,7 +228,7 @@ const translations = {
                     link: "portfolio10.html",
                     image: "images/portfolio-image11.jpg",
                     title: "Akai MPC UI Redesign",
-                    description: "I own an Akai MPC One and I wanted to redesign its user interface.",
+                    description: "I redesigned the MPC music production workstation UI.",
                     button: "View Details"
                 },
                 {
@@ -413,7 +413,7 @@ const translations = {
                     link: "portfolio10.html",
                     image: "images/portfolio-image11.jpg",
                     title: "Akai MPC UI Redesign",
-                    description: "Akai MPC One'a sahibim ve arayüzüne redesign çalışmak istedim.",
+                    description: "Akai MPC arayüzüne redesign çalışmam.",
                     button: "Detayları Gör"
                 },
                 {
