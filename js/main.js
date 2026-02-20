@@ -38,6 +38,14 @@ const translations = {
                     button: "Details ansehen"
                 },
                 {
+                    id: "cronki-design",
+                    link: "portfolio11.html",
+                    image: "images/portfolio-image12.jpg",
+                    title: "Mobile Sampler & Groovebox App Design",
+                    description: "Ich habe den UX-Flow und das UI für einen vollständig funktionsfähigen, lo-fi–inspirierten Sampler & Groovebox entworfen",
+                    button: "Details ansehen"
+                },
+                {
                     id: "akai-mpc-one-redesign",
                     link: "portfolio10.html",
                     image: "images/portfolio-image11.jpg",
@@ -221,6 +229,13 @@ const translations = {
                     image: "images/portfolio-image3.jpg",
                     title: "UI / UX Nesine.com & atyarisi.com",
                     description: "I worked as a web designer at Nesine.com for 7 years. During this period, I performed tasks such as native iOS - Android designs and mailing. I held a managerial position for the last 2 years.",
+                    button: "View Details"
+                },{
+                    id: "cronki-design",
+                    link: "portfolio11.html",
+                    image: "images/portfolio-image12.jpg",
+                    title: "Mobile Sampler & Groovebox App Design",
+                    description: "I designed the UX flow and UI for a fully functional, lo-fi–themed sampler and groovebox. ",
                     button: "View Details"
                 },
                 {
@@ -406,6 +421,14 @@ const translations = {
                     image: "images/portfolio-image3.jpg",
                     title: "UI / UX Nesine.com & atyarisi.com",
                     description: "7 sene boyunca Nesine.com ve bünyesinde web designer pozisyonunda çalıştım. Bu süreçte native iOS - And tasarımları, mailing gibi görevler yaptım. Son 2 yıl yönetici pozisyonunda bulundum.",
+                    button: "Detayları Gör"
+                },
+                 {
+                    id: "cronki-design",
+                    link: "portfolio11.html",
+                    image: "images/portfolio-image12.jpg",
+                    title: "Mobil Sampler & Groovebox Uygulaması Tasarımı",
+                    description: "Lo-fi temalı, tam fonksiyonlu bir sampler & groovebox için UX flow ve UI tasarladım.",
                     button: "Detayları Gör"
                 },
                 {
