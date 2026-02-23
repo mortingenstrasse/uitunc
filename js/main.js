@@ -46,11 +46,27 @@ const translations = {
                     button: "Details ansehen"
                 },
                 {
+                    id: "letgo-ux-case-study",
+                    link: "portfolio12.html",
+                    image: "images/portfolio-image13.jpg",
+                    title: "Letgo UX Case Study",
+                    description: "UX-Lösungen, die ich für Letgo entwickelt habe.",
+                    button: "Details ansehen"
+                },
+                {
                     id: "akai-mpc-one-redesign",
                     link: "portfolio10.html",
                     image: "images/portfolio-image11.jpg",
                     title: "Akai MPC UI Redesign",
                     description: "Ich habe das User Interface der MPC-Musikproduktions-Workstation neu gestaltet.",
+                    button: "Details ansehen"
+                },
+                {
+                    id: "finanzstatus-tracking-app",
+                    link: "portfolio13.html",
+                    image: "images/portfolio-image14.jpg",
+                    title: "Finanzstatus-Tracking App UX/UI Design",
+                    description: "Freelance UX- und UI-Design-Projekt für Urbanist, eine App zur Finanzübersicht.",
                     button: "Details ansehen"
                 },
                 {
@@ -239,11 +255,27 @@ const translations = {
                     button: "View Details"
                 },
                 {
+                    id: "letgo-ux-case-study",
+                    link: "portfolio12.html",
+                    image: "images/portfolio-image13.jpg",
+                    title: "Letgo UX Case Study",
+                    description: "UX solutions I designed for Letgo.",
+                    button: "View Details"
+                },
+                {
                     id: "akai-mpc-one-redesign",
                     link: "portfolio10.html",
                     image: "images/portfolio-image11.jpg",
                     title: "Akai MPC UI Redesign",
                     description: "I redesigned the MPC music production workstation UI.",
+                    button: "View Details"
+                },
+                {
+                    id: "financial-tracking-app-ux-ui",
+                    link: "portfolio13.html",
+                    image: "images/portfolio-image14.jpg",
+                    title: "Financial Tracking App UX/UI Design",
+                    description: "I designed the UX and UI for a financial tracking application.",
                     button: "View Details"
                 },
                 {
@@ -432,11 +464,27 @@ const translations = {
                     button: "Detayları Gör"
                 },
                 {
+                    id: "letgo-ux-case-study",
+                    link: "portfolio12.html",
+                    image: "images/portfolio-image13.jpg",
+                    title: "Letgo UX Case Study",
+                    description: "Letgo için geliştirdiğim kullanıcı deneyimi (UX) çözümleri.",
+                    button: "Detayları Gör"
+                },
+                {
                     id: "akai-mpc-one-redesign",
                     link: "portfolio10.html",
                     image: "images/portfolio-image11.jpg",
                     title: "Akai MPC UI Redesign",
                     description: "Akai MPC arayüzüne redesign çalışmam.",
+                    button: "Detayları Gör"
+                },
+                {
+                    id: "financial-tracking-app-ux-ui",
+                    link: "portfolio13.html",
+                    image: "images/portfolio-image14.jpg",
+                    title: "Financial Tracking App UX/UI Design",
+                    description: "Freelance UX and UI design project for Urbanist, a financial tracking application.",
                     button: "Detayları Gör"
                 },
                 {
