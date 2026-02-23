@@ -484,7 +484,7 @@ const translations = {
                     link: "portfolio13.html",
                     image: "images/portfolio-image14.jpg",
                     title: "Financial Tracking App UX/UI Design",
-                    description: "Freelance UX and UI design project for Urbanist, a financial tracking application.",
+                    description: "Finansal Durum Takip Uygulaması UX/UI Tasarımı",
                     button: "Detayları Gör"
                 },
                 {
