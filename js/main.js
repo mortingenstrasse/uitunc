@@ -34,7 +34,7 @@ const translations = {
                     link: "portfolio3.html",
                     image: "images/portfolio-image3.jpg",
                     title: "UI / UX Nesine.com & atyarisi.com",
-                    description: "Ich habe 7 Jahre lang als Webdesigner bei Nesine.com gearbeitet. In dieser Zeit habe ich Aufgaben wie native iOS- und Android-Designs sowie Mailing durchgeführt. Die letzten 2 Jahre war ich in einer Führungsposition tätig.",
+                    description: "Ich habe 7 Jahre lang als UX & UI / Webdesigner bei Nesine.com gearbeitet. In dieser Zeit habe ich Aufgaben wie native iOS- und Android-Designs sowie Mailing durchgeführt. Die letzten 2 Jahre war ich in einer Führungsposition tätig.",
                     button: "Details ansehen"
                 },
                 {
@@ -244,7 +244,7 @@ const translations = {
                     link: "portfolio3.html",
                     image: "images/portfolio-image3.jpg",
                     title: "UI / UX Nesine.com & atyarisi.com",
-                    description: "I worked as a web designer at Nesine.com for 7 years. During this period, I performed tasks such as native iOS - Android designs and mailing. I held a managerial position for the last 2 years.",
+                    description: "I worked as a UX & UI Designer at Nesine.com for 7 years. During this period, I performed tasks such as native iOS - Android designs and mailing. I held a managerial position for the last 2 years.",
                     button: "View Details"
                 },{
                     id: "cronki-design",
@@ -452,7 +452,7 @@ const translations = {
                     link: "portfolio3.html",
                     image: "images/portfolio-image3.jpg",
                     title: "UI / UX Nesine.com & atyarisi.com",
-                    description: "7 sene boyunca Nesine.com ve bünyesinde web designer pozisyonunda çalıştım. Bu süreçte native iOS - And tasarımları, mailing gibi görevler yaptım. Son 2 yıl yönetici pozisyonunda bulundum.",
+                    description: "7 sene boyunca Nesine.com ve bünyesinde UX & UI designer pozisyonunda çalıştım. Bu süreçte native iOS - And tasarımları, mailing gibi görevler yaptım. Son 2 yıl yönetici pozisyonunda bulundum.",
                     button: "Detayları Gör"
                 },
                  {
