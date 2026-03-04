@@ -8,7 +8,7 @@ const translations = {
         logoSpan: "Alıcıoğlu",
         hero: {
             title: "Hallo, ich bin Tunç Alıcıoğlu!",
-            subtitle: "Freiberuflicher Kreativspezialist | UI Designer | Game Dev | Music Composer"
+            subtitle: "UI/UX Designer | UX Research & Product Strategy"
         },
         portfolio: {
             title: "Portfolio",
@@ -218,7 +218,7 @@ const translations = {
         logoSpan: "Alıcıoğlu",
         hero: {
             title: "Hello, I'm Tunç Alıcıoğlu!",
-            subtitle: "Freelance Creative Specialist | UI Designer | Game Dev | Music Composer"
+            subtitle: "UI/UX Designer | UX Research & Product Strategy"
         },
         portfolio: {
             title: "Portfolio",
@@ -426,7 +426,7 @@ const translations = {
         logoSpan: "Alıcıoğlu",
         hero: {
             title: "Merhaba, ben Tunç Alıcıoğlu!",
-            subtitle: "Freelancer Designer | UI Tasarımcısı | Oyun Geliştirici | Müzik Bestecisi"
+            subtitle: "UI/UX Designer | UX Research & Product Strategy"
         },
         portfolio: {
             title: "Portfolyo",
