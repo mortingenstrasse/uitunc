@@ -129,16 +129,16 @@ const translations = {
         },
         about: {
             title: "About Me",
-            fullText: "<p>Ich bin ein UI-Designer mit über zehn Jahren Berufserfahrung. Meine Karriere begann ich als Grafikdesigner. Durch kontinuierliche Weiterbildung habe ich meine Fähigkeiten in Video­bearbeitung, 2D-Animation, Webdesign und UI/UX erweitert und mich als UI-Designer spezialisiert. Parallel dazu habe ich mich auch im Musikbereich weiterentwickelt und arbeite seit 2020 professionell für verschiedene Musikbibliotheken. Im Jahr 2024 habe ich die Unternehmenswelt verlassen, um meine eigenen Projekte umzusetzen und als vielseitiger freiberuflicher Kreativer zu arbeiten. Jetzt möchte ich meine Erfahrung und meine Fähigkeiten in einem starken Team oder einem innovativen Projekt einbringen.</p>"
+            fullText: "<p>Ich bin ein UI / UXDesigner mit über zehn Jahren Berufserfahrung. Meine Karriere begann ich als Grafikdesigner. Durch kontinuierliche Weiterbildung habe ich meine Fähigkeiten in Video­bearbeitung, 2D-Animation, Webdesign und UI/UX erweitert und mich als UI-Designer spezialisiert. Parallel dazu habe ich mich auch im Musikbereich weiterentwickelt und arbeite seit 2020 professionell für verschiedene Musikbibliotheken. Im Jahr 2024 habe ich die Unternehmenswelt verlassen, um meine eigenen Projekte umzusetzen und als vielseitiger freiberuflicher Kreativer zu arbeiten. Jetzt möchte ich meine Erfahrung und meine Fähigkeiten in einem starken Team oder einem innovativen Projekt einbringen.</p>"
         },
         skills: [
             {"name": "iOS, Android, Responsive Web Design", "level": 100},
             {"name": "UI/UX Design (Figma, Sketch)", "level": 100},
+            {"name": "UX Research & User Centered Design", "level": 100},
             {"name": "Graphic Design(Illustrator, Photoshop)", "level": 95},
             {"name": "2D Motion Design (After Effects)", "level": 80},
             {"name": "UI Animation, Motion Design (Lottie)", "level": 80},
             {"name": "HTML, CSS, JavaScript)", "level": 70},
-            {"name": "Logic Pro", "level": 100},
             {"name": "Unreal Engine & Unity", "level": 50},
             {"name": "Blender, Cinema 4D", "level": 20}
             
@@ -148,9 +148,9 @@ const translations = {
             items: [
                 {
                     date: "2024 - heute",
-                    role: "Freelancer — UI & UX Designer, Webentwickler, Indie Game Developer und Komponist für Spiele",
+                    role: "Freelancer — UI/UX Designer | UX Research & Product Strategy",
                     company: "Selbstständig, Remote",
-                    description: "UI & UX Designer, Webentwickler auf Upwork, Indie Game Developer und Komponist für Spiele und Filmmusik auf Fiverr."
+                    description: "UI/UX Designer, UX Research & Product Strategy, Webentwickler"
                 },
                 {
                     date: "2017 - 2024",
@@ -228,7 +228,7 @@ const translations = {
                     link: "portfolio1.html",
                     image: "images/portfolio-image1.jpg",
                     title: "UI / UX Redesign Deuces Cracked",
-                    description: "I took part in the modern redesign of an American poker training site.",
+                    description: "I contributed to the UX improvement and redesign of an American poker training platform, focusing on user flow optimization and interface clarity.",
                     button: "View Details"
                 },
                 {
@@ -244,7 +244,7 @@ const translations = {
                     link: "portfolio3.html",
                     image: "images/portfolio-image3.jpg",
                     title: "UI / UX Nesine.com & atyarisi.com",
-                    description: "I worked as a UX & UI Designer at Nesine.com for 7 years. During this period, I performed tasks such as native iOS - Android designs and mailing. I held a managerial position for the last 2 years.",
+                    description: "I worked as a UI/UX Designer at Nesine.com for 7 years, where I designed native iOS, Android and web app products, conducted user research, developed user flows, and synthesized user feedback into actionable product improvements. During the last 2 years, I led the design team as UI/UX Manager.",
                     button: "View Details"
                 },{
                     id: "cronki-design",
@@ -338,16 +338,16 @@ const translations = {
         },
         about: {
             title: "About Me",
-            fullText: "<p>I am a UI designer with over 10 years of professional experience. I began my career as a graphic designer and gradually expanded my skill set through continuous learning in video editing, 2D animation, web design, and UI/UX. Over time, this growth positioned me firmly as a UI Designer. Alongside my design career, I have also developed myself in music, receiving training and working with various music libraries since 2020. In 2024, I transitioned from corporate work to focus on my own projects, becoming a versatile freelance creative professional. I now aim to apply my multidisciplinary expertise within a strong team or an innovative project where I can contribute meaningful value.</p>"
+            fullText: "<p>I am a UI/UX Designer with over 10 years of professional experience. I began my career as a graphic designer and gradually expanded my skill set through continuous learning in video editing, 2D animation, web design, and UI/UX. Over time, this growth positioned me firmly as a UX / UI Designer. Alongside my design career, I have also developed myself in music, receiving training and working with various music libraries since 2020. In 2024, I transitioned from corporate work to focus on my own projects, becoming a versatile freelance creative professional. I now aim to apply my multidisciplinary expertise within a strong team or an innovative project where I can contribute meaningful value.</p>"
         },
         skills: [
             {"name": "iOS, Android, Responsive Web Design", "level": 100},
             {"name": "UI/UX Design (Figma, Sketch)", "level": 100},
+            {"name": "UX Research & User Centered Design", "level": 100},
             {"name": "Graphic Design(Illustrator, Photoshop)", "level": 95},
             {"name": "2D Motion Design (After Effects)", "level": 80},
             {"name": "UI Animation, Motion Design (Lottie)", "level": 80},
             {"name": "HTML, CSS, JavaScript)", "level": 70},
-            {"name": "Logic Pro", "level": 100},
             {"name": "Unreal Engine & Unity", "level": 50},
             {"name": "Blender, Cinema 4D", "level": 20}
         ],
@@ -356,9 +356,9 @@ const translations = {
             items: [
                 {
                     date: "2024 - Present",
-                    role: "Freelancer — UI & UX Designer / Web Developer, Indie Game Developer, and Game & Film Music Composer",
+                    role: "Freelancer — UI/UX Designer | UX Research & Product Strategy",
                     company: "Self-employed, Remote",
-                    description: "UI & UX Designer / Web Developer on Upwork, Indie Game Developer on itch.io, and Game & Film Music Composer on Fiverr, Contributor on Storyblocks and Pond5"
+                    description: "UI/UX Designer | UX Research & Product Strategy"
                 },
                 {
                     date: "2017 - 2024",
@@ -436,7 +436,7 @@ const translations = {
                     link: "portfolio1.html",
                     image: "images/portfolio-image1.jpg",
                     title: "UI / UX Redesign Deuces Cracked",
-                    description: "Amerika’lı poker eğitim sitesinin modern bir redesign çalışmasında görev aldım.",
+                    description: "Amerika’lı poker eğitim sitesinin UX iyileştirmeleri ve redesign çalışmasında görev aldım.",
                     button: "Detayları Gör"
                 },
                 {
@@ -452,7 +452,7 @@ const translations = {
                     link: "portfolio3.html",
                     image: "images/portfolio-image3.jpg",
                     title: "UI / UX Nesine.com & atyarisi.com",
-                    description: "7 sene boyunca Nesine.com ve bünyesinde UX & UI designer pozisyonunda çalıştım. Bu süreçte native iOS - And tasarımları, mailing gibi görevler yaptım. Son 2 yıl yönetici pozisyonunda bulundum.",
+                    description: "7 yıl boyunca Nesine.com bünyesinde UI/UX Designer olarak çalıştım. Bu süreçte native iOS, Android ve web app ürünleri tasarladım; user flow'lar geliştirdim ve kullanıcı geri bildirimlerini analiz ederek ürün kararlarına dönüştürdüm. Son 2 yıl tasarım yöneticisi pozisyonunda görev aldım.",
                     button: "Detayları Gör"
                 },
                  {
@@ -508,7 +508,7 @@ const translations = {
                     link: "portfolio6.html",
                     image: "images/portfolio-image6.jpg",
                     title: "composerunion.com UI&UX / Fullstack Development",
-                    description: "Müzik ve müzik eğitimi üzerine bir blog platformu geliştirdim. Tasarımı Figma'da oluşturdum, backend'i Supabase ile inşa ettim. Admin paneli ve SEO dostu içerik sistemi üzerinde çalışmaya devam ediyorum.",
+                    description: "Müzik ve müzik eğitimi üzerine bir blog platformu geliştirdim. Backend'i Supabase ile inşa ettim. Admin paneli ve SEO dostu içerik sistemi üzerinde çalışmaya devam ediyorum.",
                     button: "Detayları Gör"
                 },
                 {
@@ -547,16 +547,16 @@ const translations = {
         },
         about: {
             title: "Hakkımda",
-            fullText: "<p>Profesyonel olarak 10+ yıllık deneyime sahip bir arayüz tasarımcıyım. Kariyerime grafik tasarımcı olarak başladım; devam eden eğitimlerle video editörlüğü, 2D animasyon, web tasarımı ve UI/UX alanlarında uzmanlaşarak UI Designer olarak konumlandım. Tasarım yolculuğuma paralel olarak müzik alanında da kendimi sürekli geliştirdim ve 2020’den itibaren çeşitli müzik kütüphaneleri için profesyonel çalışmalar ürettim. 2024 yılında, kendi projelerimi hayata geçirmek için kurumsal iş hayatından ayrılarak freelance, çok yönlü bir yaratıcı profesyonel olarak çalışmaya başladım. Edindiğim tüm bu deneyimi, güçlü bir ekipte veya yenilikçi bir projede değer üretmek için kullanmayı hedefliyorum.</p>"
+            fullText: "<p>Profesyonel olarak 10+ yıllık deneyime sahip bir UX & UI tasarımcıyım. Kariyerime grafik tasarımcı olarak başladım; devam eden eğitimlerle video editörlüğü, 2D animasyon, web tasarımı ve UI/UX alanlarında uzmanlaşarak UX / UI Designer olarak konumlandım. Tasarım yolculuğuma paralel olarak müzik alanında da kendimi sürekli geliştirdim ve 2020’den itibaren çeşitli müzik kütüphaneleri için profesyonel çalışmalar ürettim. 2024 yılında, kendi projelerimi hayata geçirmek için kurumsal iş hayatından ayrılarak freelance, çok yönlü bir yaratıcı profesyonel olarak çalışmaya başladım. Edindiğim tüm bu deneyimi, güçlü bir ekipte veya yenilikçi bir projede değer üretmek için kullanmayı hedefliyorum.</p>"
         },
         skills: [
             {"name": "iOS, Android, Responsive Web Design", "level": 100},
             {"name": "UI/UX Design (Figma, Sketch)", "level": 100},
+            {"name": "UX Research & User Centered Design", "level": 100},
             {"name": "Graphic Design(Illustrator, Photoshop)", "level": 95},
             {"name": "2D Motion Design (After Effects)", "level": 80},
             {"name": "UI Animation, Motion Design (Lottie)", "level": 80},
             {"name": "HTML, CSS, JavaScript)", "level": 70},
-            {"name": "Logic Pro", "level": 100},
             {"name": "Unreal Engine & Unity", "level": 50},
             {"name": "Blender, Cinema 4D", "level": 20}
         ],
@@ -565,15 +565,15 @@ const translations = {
             items: [
                 {
                     date: "2024 - Bugün",
-                    role: "Freelancer - UI & UX / Web Developer, Indie Game Developer, Music Composer",
+                    role: "Freelancer - UI/UX Designer | UX Research & Product Strategy",
                     company: "Upwork, Fiverr, itch.io, storyblocks, pond5",
-                    description: "Upwork’te UI & UX Tasarımcısı / Web Developer, Indie Game Developer ve Fiverr’da Oyun & Film Müziği Bestecisi."
+                    description: "UI/UX Designer, UX Research & Product Strategy"
                 },
                 {
                     date: "2017 - 2024",
                     role: "UI & UX Tasarımcısı — Nesine.com",
                     company: "Nesine.com / atyarisi.com, İstanbul",
-                    description: "Nesine.com ve atyarisi.com’un tüm platform ve ekranlarında arayüz tasarımcısı olarak görev aldım. Son iki yılda yönetici pozisyonunda çalıştım."
+                    description: "Nesine.com ve atyarisi.com’un tüm platform ve ekranlarında UX & UI tasarımcısı olarak görev aldım. Son iki yılda yönetici pozisyonunda çalıştım."
                 },
                 {
                     date: "2016 - 2017",
