@@ -38,11 +38,11 @@ const translations = {
                     button: "Details ansehen"
                 },
                 {
-                    id: "cronki-design",
-                    link: "portfolio11.html",
-                    image: "images/portfolio-image12.jpg",
-                    title: "Mobile Sampler & Groovebox App Design",
-                    description: "Ich habe den UX-Flow und das UI für einen vollständig funktionsfähigen, lo-fi–inspirierten Sampler & Groovebox entworfen",
+                    id: "proaudiofx-design",
+                    link: "portfolio14.html",
+                    image: "images/portfolio-image15.jpg",
+                    title: "ProAudioFX: VST/AU Software Design",
+                    description: "Professionelle Audio-Effekt-Software mit interaktiven Animationen und High-Fidelity-Soundlösungen, entwickelt durch Vibe-Coding.",
                     button: "Details ansehen"
                 },
                 {
@@ -115,6 +115,14 @@ const translations = {
                     image: "images/portfolio-image10.jpg",
                     title: "Lottie Animation & UI Motion",
                     description: "Durch meine Erfahrung mit Figma und After Effects kann ich Oberflächen schnell mit Animationen verbessern.",
+                    button: "Details ansehen"
+                },
+                {
+                    id: "cronki-design",
+                    link: "portfolio11.html",
+                    image: "images/portfolio-image12.jpg",
+                    title: "Mobile Sampler & Groovebox App Design",
+                    description: "Ich habe den UX-Flow und das UI für einen vollständig funktionsfähigen, lo-fi–inspirierten Sampler & Groovebox entworfen",
                     button: "Details ansehen"
                 }
             ]
@@ -247,11 +255,11 @@ const translations = {
                     description: "I worked as a UI/UX Designer at Nesine.com for 7 years, where I designed native iOS, Android and web app products, conducted user research, developed user flows, and synthesized user feedback into actionable product improvements. During the last 2 years, I led the design team as UI/UX Manager.",
                     button: "View Details"
                 },{
-                    id: "cronki-design",
-                    link: "portfolio11.html",
-                    image: "images/portfolio-image12.jpg",
-                    title: "Mobile Sampler & Groovebox App Design",
-                    description: "I designed the UX flow and UI for a fully functional, lo-fi–themed sampler and groovebox. ",
+                    id: "proaudiofx-design",
+                    link: "portfolio14.html",
+                    image: "images/portfolio-image15.jpg",
+                    title: "ProAudioFX: VST/AU Software Design",
+                    description: "Professional audio effect software featuring interactive animations and high-fidelity sound solutions, developed via vibe-coding.",
                     button: "View Details"
                 },
                 {
@@ -324,6 +332,14 @@ const translations = {
                     image: "images/portfolio-image10.jpg",
                     title: "Lottie Animation & UI Motion",
                     description: "With my experience in Figma and After Effects, I can quickly enhance interfaces with engaging animations.",
+                    button: "View Details"
+                },
+                ,{
+                    id: "cronki-design",
+                    link: "portfolio11.html",
+                    image: "images/portfolio-image12.jpg",
+                    title: "Mobile Sampler & Groovebox App Design",
+                    description: "I designed the UX flow and UI for a fully functional, lo-fi–themed sampler and groovebox. ",
                     button: "View Details"
                 }
             ]
@@ -456,11 +472,11 @@ const translations = {
                     button: "Detayları Gör"
                 },
                  {
-                    id: "cronki-design",
-                    link: "portfolio11.html",
-                    image: "images/portfolio-image12.jpg",
-                    title: "Mobil Sampler & Groovebox Uygulaması Tasarımı",
-                    description: "Lo-fi temalı, tam fonksiyonlu bir sampler & groovebox için UX flow ve UI tasarladım.",
+                    id: "proaudiofx-design",
+                    link: "portfolio14.html",
+                    image: "images/portfolio-image15.jpg",
+                    title: "ProAudioFX: VST/AU Yazılım Tasarımı",
+                    description: "Vibe-coding ile geliştirilen, interaktif animasyonlara ve yüksek ses çözünürlüğüne sahip profesyonel ses efekti yazılımları.",
                     button: "Detayları Gör"
                 },
                 {
@@ -533,6 +549,14 @@ const translations = {
                     image: "images/portfolio-image10.jpg",
                     title: "Lottie Animation & UI Motion",
                     description: "Figma ve After Effects bilgim sayesinde arayüzleri hızlıca etkileyici animasyonlarla zenginleştirebiliyorum.",
+                    button: "Detayları Gör"
+                },
+                {
+                    id: "cronki-design",
+                    link: "portfolio11.html",
+                    image: "images/portfolio-image12.jpg",
+                    title: "Mobil Sampler & Groovebox Uygulaması Tasarımı",
+                    description: "Lo-fi temalı, tam fonksiyonlu bir sampler & groovebox için UX flow ve UI tasarladım.",
                     button: "Detayları Gör"
                 }
             ]
