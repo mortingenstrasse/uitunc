@@ -4,3 +4,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.js .intro-screen{display:none}.js .reveal:not(.seen){opacity:1;transform:none}.custom-cursor .cursor{display:none}html.custom-cursor,html.custom-cursor a,html.custom-cursor button{cursor:auto}}
 .title-mask{padding-top:.18em;margin-top:-.18em}.hero-left{top:37%}@media(max-width:760px){.hero-left{top:175px}}
 .intro-word{padding:.2em 0;margin:-.2em 0}
+
+@media(max-width:760px){.languages{margin-left:auto}}
